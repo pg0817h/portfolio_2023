@@ -8,11 +8,11 @@ const LandingContainer: React.FC = () => {
       delay: 1,
       stagger: 0.4,
       visibility: "visible",
-      startAt: { y: "-30%" },
+      startAt: { y: "-10%" },
     });
     gsap.to(".container", {
       scale: 2,
-      y: "100%",
+      y: "140%",
       ease: "strong.inOut",
       delay: 5.5,
       duration: 2,

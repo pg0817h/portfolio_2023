@@ -33,7 +33,9 @@ body {
   margin-left: 60px;
 }
 
-
+.title{
+  visibility: hidden
+}
 .container {
   position: absolute;
   top: 50%;
@@ -95,7 +97,7 @@ body {
 }
 
 .title {
-  margin-top: 20rem;
+  margin-top: 15rem;
   text-align: center;
   font-family: "Canopee";
   font-size: 10em;
