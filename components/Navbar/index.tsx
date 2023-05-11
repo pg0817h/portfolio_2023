@@ -24,7 +24,7 @@ const Navbar: React.FC = () => {
 
   return (
     <div className={`navbar`}>
-      <div className="site-info">elevated</div>
+      <div className="site-info">{`Reach The Fullest`}</div>
       <div className="site-menu">
         <div className="menu-item">projects</div>
         <div className="menu-item">about</div>

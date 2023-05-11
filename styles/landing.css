@@ -55,37 +55,37 @@ body {
 }
 
 .b-1 {
-  background: url("../images/image-one.jpg") 50% 50% no-repeat;
+  background: url("../images/image-one.jpeg") 50% 50% no-repeat;
   background-size: cover;
 }
 
 .b-2 {
-  background: url("../images/image-two.jpg") 50% 50% no-repeat;
+  background: url("../images/image-two.jpeg") 50% 50% no-repeat;
   background-size: cover;
 }
 
 .b-3 {
-  background: url("../images/image-three.jpg") 50% 50% no-repeat;
+  background: url("../images/image-three.jpeg") 50% 50% no-repeat;
   background-size: cover;
 }
 
 .b-4 {
-  background: url("../images/image-four.jpg") 50% 50% no-repeat;
+  background: url("../images/image-four.jpeg") 50% 50% no-repeat;
   background-size: cover;
 }
 
 .b-5 {
-  background: url("../images/image-five.jpg") 50% 50% no-repeat;
+  background: url("../images/image-five.jpeg") 50% 50% no-repeat;
   background-size: cover;
 }
 
 .b-6 {
-  background: url("../images/image-six.jpg") 50% 50% no-repeat;
+  background: url("../images/image-six.jpeg") 50% 50% no-repeat;
   background-size: cover;
 }
 
 .b-7 {
-  background: url("../images/image-seven.jpg") 50% 50% no-repeat;
+  background: url("../images/image-seven.jpeg") 50% 50% no-repeat;
   background-size: cover;
 }
 .overlay {
@@ -100,7 +100,7 @@ body {
   margin-top: 15rem;
   text-align: center;
   font-family: "Canopee";
-  font-size: 10em;
+  font-size: 8em;
   color: #393833;
   overflow: hidden;
 }

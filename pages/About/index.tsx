@@ -4,7 +4,7 @@ import { TextPlugin } from "gsap/dist/TextPlugin";
 import LandingContainer from "../../components/LandingContainer";
 import Navbar from "../../components/Navbar";
 
-export default function LandingPage() {
+export default function AboutPage() {
   const titleRef = useRef<HTMLParagraphElement>(null);
 
   gsap.registerPlugin(TextPlugin);
@@ -19,7 +19,7 @@ export default function LandingPage() {
 
     gsap.from(".title", {
       duration: 1.5,
-      text: `MachineGeon K'abby'🔫`,
+      text: "Reach The Fullest",
       ease: "expo.inOut",
       visibility: "visible",
       delay: 6,
