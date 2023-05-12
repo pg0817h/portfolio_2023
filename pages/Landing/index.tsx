@@ -1,31 +1,27 @@
-import React, { useEffect, useRef } from "react";
+import React, { useEffect, useLayoutEffect, useRef } from "react";
 import gsap from "gsap";
-import { TextPlugin } from "gsap/dist/TextPlugin";
+
 import LandingContainer from "../../components/LandingContainer";
 import Navbar from "../../components/Navbar";
 
 export default function LandingPage() {
   const titleRef = useRef<HTMLParagraphElement>(null);
 
-  gsap.registerPlugin(TextPlugin);
-
-  useEffect(() => {
+  useLayoutEffect(() => {
     gsap.to(".overlay", {
-      y: 230,
+      y: "-2%",
       ease: "power2.out",
       delay: 5.3,
-      // scale: 0.5,
     }); //TODO: scale
 
-    gsap.from(".title", {
+    gsap.to(titleRef.current, {
       duration: 1.5,
-      text: `MachineGeon K'abby'🔫`,
       ease: "expo.inOut",
       visibility: "visible",
       delay: 6,
       stagger: 0.5,
-      startAt: { y: 10 },
-      y: -200,
+      startAt: { y: -10 },
+      y: 100,
     });
   }, []);
 
@@ -34,7 +30,9 @@ export default function LandingPage() {
       <Navbar />
       <LandingContainer />
       <div className="overlay"></div>
-      <p className="title" ref={titleRef}></p>
+      <p className="title" ref={titleRef}>
+        `MachineGeon K'abby'🔫`
+      </p>
     </>
   );
 }

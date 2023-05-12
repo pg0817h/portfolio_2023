@@ -33,9 +33,7 @@ body {
   margin-left: 60px;
 }
 
-.title{
-  visibility: hidden
-}
+
 .container {
   position: absolute;
   top: 50%;
@@ -51,7 +49,6 @@ body {
   width: 100%;
   height: 100%;
   position: absolute;
-
 }
 
 .b-1 {
@@ -97,12 +94,13 @@ body {
 }
 
 .title {
-  margin-top: 15rem;
+  margin-top: 10rem;
   text-align: center;
   font-family: "Canopee";
-  font-size: 8em;
+  font-size: 6em;
   color: #393833;
   overflow: hidden;
+  visibility: hidden;
 }
 
 .title .letter {

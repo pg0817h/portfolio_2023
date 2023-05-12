@@ -1,20 +1,22 @@
-import React, { useEffect, useState } from "react";
+import React, { useEffect, useLayoutEffect, useState } from "react";
 import gsap from "gsap";
 
 const LandingContainer: React.FC = () => {
-  useEffect(() => {
-    gsap.from(".container > .block", {
-      y: "110%",
-      delay: 1,
+  useLayoutEffect(() => {
+    gsap.to(".container > .block", {
+      y: -100,
+      delay: 1.2,
+      ease: "power4.out",
       stagger: 0.4,
       visibility: "visible",
-      startAt: { y: "-10%" },
+      startAt: { y: 100 },
     });
     gsap.to(".container", {
       scale: 2,
       y: "140%",
       ease: "strong.inOut",
       delay: 5.5,
+      visibility: "visible",
       duration: 2,
     });
   }, []);
