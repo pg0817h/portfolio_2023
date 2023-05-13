@@ -1,8 +1,6 @@
-import React, { useEffect, useLayoutEffect, useRef } from "react";
+import React, { useLayoutEffect, useRef } from "react";
 import gsap from "gsap";
-
-import LandingContainer from "../../components/LandingContainer";
-import Navbar from "../../components/Navbar";
+import LandingContainer from "../LandingContainer";
 
 export default function LandingPage() {
   const titleRef = useRef<HTMLParagraphElement>(null);
@@ -27,7 +25,6 @@ export default function LandingPage() {
 
   return (
     <>
-      <Navbar />
       <LandingContainer />
       <div className="overlay"></div>
       <p className="title" ref={titleRef}>
