@@ -3,7 +3,7 @@ import gsap from "gsap";
 
 const LandingContainer: React.FC = () => {
   useLayoutEffect(() => {
-    gsap.to(".container > .block", {
+    gsap.to(".landing__container > .block", {
       y: -100,
       delay: 1.2,
       ease: "power4.out",
@@ -11,9 +11,9 @@ const LandingContainer: React.FC = () => {
       visibility: "visible",
       startAt: { y: 100 },
     });
-    gsap.to(".container", {
+    gsap.to(".landing__container", {
       scale: 2,
-      y: "140%",
+      y: "100%",
       ease: "strong.inOut",
       delay: 5.5,
       visibility: "visible",
@@ -21,7 +21,7 @@ const LandingContainer: React.FC = () => {
     });
   }, []);
   return (
-    <div className={`container`}>
+    <div className="landing__container">
       <div className="block b-1"></div>
       <div className="block b-2"></div>
       <div className="block b-3"></div>

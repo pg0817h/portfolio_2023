@@ -1,10 +1,12 @@
 .about__container {
-  margin: 700px 100px 100px 100px;
+  box-sizing: border-box;
+  margin: 10%;
   padding: 40px;
-  display: grid;
+ 
   grid-template-columns: 0.5fr 1fr;
   color: #fff;
-    visibility: hidden
+  visibility: hidden;
+  display: none;
 }
 
 .about__container .intro {
@@ -20,14 +22,15 @@
   max-width: 60%;
   margin-left: 20%;
   padding-right: 2.6rem;
-  box-sizing: border-box;
-
  
 }
-.skills p {
+.skills__container{
+  /* margin-top: 5rem; */
+}
+/* .skills p {
   margin-bottom: 10%;
   transform: translateY(0);
 }
 .skills p:first-child {
 transition-delay: 0.1s;
-}
+} */

@@ -1,0 +1,53 @@
+.project__container {
+    /* display: none; */
+
+}
+.project__container-images {
+  position: relative;
+  width: 100%;
+  padding: 40px 0;
+}
+
+.project__image {
+  background: red;
+  width: 600px;
+  height: 500px;
+  margin: 40px auto;
+}
+
+.project__image-one {
+  background: url(../images/image-one.jpeg) no-repeat 50% 50%;
+  background-size: cover;
+}
+
+.project__image-two {
+  position: relative;
+  top: -100px;
+  left: -260px;
+  background: url(../images/image-two.jpeg) no-repeat 50% 50%;
+  background-size: cover;
+}
+
+.project__image-three {
+  position: relative;
+  left: 300px;
+  background: url(../images/image-three.jpeg) no-repeat 50% 50%;
+  background-size: cover;
+}
+
+.project__image-four {
+  position: relative;
+  top: -200px;
+  left: -100px;
+  background: url(../images/image-four.jpeg) no-repeat 50% 50%;
+  background-size: cover;
+}
+.project__container {
+  width: 70%;
+  margin: 100px auto;
+  /* border: 1px solid #5c5c5c; */
+  color: #fff;
+  padding: 120px 40px;
+  text-align: center;
+  visibility: hidden;
+}

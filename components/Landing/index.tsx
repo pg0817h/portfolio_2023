@@ -7,7 +7,7 @@ export default function LandingPage() {
 
   useLayoutEffect(() => {
     gsap.to(".overlay", {
-      y: "-2%",
+      y: "70%",
       ease: "power2.out",
       delay: 5.3,
     }); //TODO: scale
@@ -18,18 +18,23 @@ export default function LandingPage() {
       visibility: "visible",
       delay: 6,
       stagger: 0.5,
-      startAt: { y: -10 },
+      startAt: { y: 0 },
       y: 100,
+    });
+    gsap.to(".landingPage__container", {
+      opacity: 1,
     });
   }, []);
 
   return (
     <>
-      <LandingContainer />
-      <div className="overlay"></div>
-      <p className="title" ref={titleRef}>
-        `MachineGeon K'abby'🔫`
-      </p>
+      <div className="landingPage__container" data-scroll-section>
+        <LandingContainer />
+        <p className="title" ref={titleRef}>
+          `MachineGeon K'abby'🔫`
+        </p>
+        <div className="overlay"></div>
+      </div>
     </>
   );
 }

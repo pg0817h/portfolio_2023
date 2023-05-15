@@ -1,83 +1,65 @@
 import React, { useEffect, useRef } from "react";
+import { useLocomotiveScroll } from "react-locomotive-scroll";
 import { gsap } from "gsap";
-import { ScrollTrigger } from "gsap/dist/ScrollTrigger";
+import LineAnimation from "../lineAnimation";
 
 export default function AboutPage() {
   const scrollRef = useRef<HTMLDivElement>(null);
-  gsap.registerPlugin(ScrollTrigger);
+  const { scroll } = useLocomotiveScroll();
+
   useEffect(() => {
-    let locomotiveScroll;
     gsap.to(".about__container", {
       ease: "expo.inOut",
       visibility: "visible",
       delay: 6,
-    });
-    import("locomotive-scroll").then((locomotiveModule) => {
-      locomotiveScroll = new locomotiveModule.default({
-        el: scrollRef.current,
-        smooth: true,
-        smoothMobile: false,
-        resetNativeScroll: true,
-      });
-
-      console.log("scroll object created successfully:", locomotiveScroll);
+      display: "grid",
     });
 
-    return () => {
-      if (locomotiveScroll) locomotiveScroll.destroy();
-    };
-  }, []);
-  // useEffect(() => {
-  //   let locomotiveScroll;
-  //   gsap.registerPlugin(ScrollTrigger);
-  //   const animation = gsap.to(scrollRef.current, {
-  //     y: -100,
-  //     duration: 1,
-  //     ease: "power2.inOut",
-  //     startAt: { y: 200 },
-  //   });
+    // Log the current scroll position
+    console.log("scroll", scroll);
+    console.log("Scroll position:", scroll?.scroll.y);
 
-  //   ScrollTrigger.create({
-  //     trigger: ".skills",
-  //     start: "top center",
-  //     end: "bottom center",
-  //     animation: animation,
-  //     scrub: true,
-  //   });
-  //   gsap.to(".about__container", {
-  //     ease: "expo.inOut",
-  //     visibility: "visible",
-  //     delay: 6,
-  //   });
-  // }, []);
+    // Log the current scroll velocity
+    console.log("Scroll velocity:", scroll?.scroll.yVelocity);
+  }, [scroll]);
 
   return (
     <>
       <div className="about__container" data-scroll-section>
-        <p className="intro" data-scroll>
-          Hey there! I'm a frontend developer with experience building multiple
-          websites using Next.js, TypeScript, React, and JavaScript. I
-          absolutely love helping people and building websites that solve
-          problems.
-        </p>
-
-        <div className="skills" ref={scrollRef}>
-          <p data-scroll data-scroll-speed="2">
-            If you have any questions or need help with building a website,
-            solving a problem, or anything related to TypeScript, React, or
-            JavaScript, feel free to reach out to me.
+        {/* <LineAnimation /> */}
+        <div className="intro">
+          <p>
+            Hey there! I'm a frontend developer with experience building
+            multiple websites using Next.js, TypeScript, React, and JavaScript.
+            I absolutely love helping people and building websites that solve
+            problems.
           </p>
-          <p data-scroll data-scroll-speed="2">
-            If you have any questions or need help with building a website,
-            solving a problem, or anything related to TypeScript, React, or
-            JavaScript, feel free to reach out to me.
-          </p>
-          <p data-scroll data-scroll-speed="2">
-            If you have any questions or need help with building a website,
-            solving a problem, or anything related to TypeScript, React, or
-            JavaScript, feel free to reach out to me.
-          </p>
-          {/* ... */}
+        </div>
+        <div className="skills__container">
+          <div
+            className="skills"
+            ref={scrollRef}
+            data-scroll
+            data-scroll-offset="-10%"
+            data-scroll-speed="3"
+            data-scroll-target=".intro"
+          >
+            <p>
+              If you have any questions or need help with building a website,
+              solving a problem, or anything related to TypeScript, React, or
+              JavaScript, feel free to reach out to me.
+            </p>
+            <p>
+              If you have any questions or need help with building a website,
+              solving a problem, or anything related to TypeScript, React, or
+              JavaScript, feel free to reach out to me.
+            </p>
+            <p>
+              If you have any questions or need help with building a website,
+              solving a problem, or anything related to TypeScript, React, or
+              JavaScript, feel free to reach out to me.
+            </p>
+          </div>
         </div>
       </div>
     </>
