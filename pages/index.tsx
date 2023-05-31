@@ -1,15 +1,17 @@
-import React, { useLayoutEffect, useRef } from "react";
-import gsap from "gsap";
-import { LocomotiveScrollProvider } from "react-locomotive-scroll";
+import React from "react";
 import LandingPage from "../components/Landing";
 import AboutPage from "@/components/about";
 import ProjectPage from "@/components/project";
 export default function Home() {
   return (
     <>
-      <LandingPage />
-      <AboutPage />
-      <ProjectPage />
+      <div>
+        <LandingPage />
+        <AboutPage />
+      </div>
+      <div>
+        <ProjectPage />
+      </div>
     </>
   );
 }

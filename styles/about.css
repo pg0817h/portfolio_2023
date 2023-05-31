@@ -2,13 +2,15 @@
   box-sizing: border-box;
   margin: 10%;
   padding: 40px;
- 
+  height: 100%;
   grid-template-columns: 0.5fr 1fr;
   color: #fff;
   visibility: hidden;
   display: none;
 }
-
+.about__intro{
+  margin-top: 10%
+}
 .about__container .intro {
   border-top: 2px solid #f5f3ee;
   padding-top: 10%;
@@ -25,7 +27,24 @@
  
 }
 .skills__container{
-  /* margin-top: 5rem; */
+  margin-top: 45rem;
+}
+.expertises{
+  margin-top: 20rem;
+  margin-bottom: 48.4rem;
+}
+ul{
+  list-style: none;
+}
+.skills__title{
+  font-weight: 400;
+  margin-bottom: 7.8rem;
+  padding-top: 7rem;
+  position: relative;
+  
+}
+.about__section{
+  /* background-color: transparent; */
 }
 /* .skills p {
   margin-bottom: 10%;

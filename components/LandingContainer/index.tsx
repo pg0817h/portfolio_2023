@@ -9,15 +9,15 @@ const LandingContainer: React.FC = () => {
       ease: "power4.out",
       stagger: 0.4,
       visibility: "visible",
-      startAt: { y: 100 },
+      startAt: { y: 200 },
     });
     gsap.to(".landing__container", {
       scale: 2,
-      y: "100%",
       ease: "strong.inOut",
       delay: 5.5,
       visibility: "visible",
       duration: 2,
+      y: -80,
     });
   }, []);
   return (
