@@ -2,6 +2,7 @@ import "../styles/globals.css";
 import "../styles/landing.css";
 import "../styles/about.css";
 import "../styles/project.css";
+import "../styles/contact.css";
 import "tailwindcss/tailwind.css";
 
 import Navbar from "@/components/Navbar";
@@ -13,10 +14,10 @@ export default function App({ Component, pageProps }: AppProps) {
   const containerRef = useRef(null);
   useLayoutEffect(() => {
     gsap.to(".page__container", {
-      delay: 6,
+      delay: 1,
     });
     gsap.to("body", {
-      delay: 6,
+      delay: 1,
       overflow: "auto",
     });
   }, []);

@@ -1,31 +1,38 @@
-import { useRef, useEffect } from "react";
+import { useRef, useLayoutEffect } from "react";
+import { ScrollTrigger } from "gsap/dist/ScrollTrigger";
 import { gsap } from "gsap";
-import { useLocomotiveScroll } from "react-locomotive-scroll";
 
-const LineAnimation = () => {
+type MyComponentProps = {
+  target: string;
+};
+const LineAnimation: React.FC<MyComponentProps> = ({ target }) => {
   const lineRef = useRef(null);
-  const { scroll } = useLocomotiveScroll();
 
-  useEffect(() => {
-    gsap.fromTo(
-      lineRef.current,
-      {
-        backgroundColor: "none",
+  useLayoutEffect(() => {
+    gsap.registerPlugin(ScrollTrigger);
+
+    gsap.to(lineRef.current, {
+      width: "100%",
+      duration: 0.5,
+      scrub: true,
+      scrollTrigger: {
+        trigger: target,
+        start: "top top",
       },
-      {
-        delay: 6,
-        duration: 2,
-        ease: "none",
-        backgroundColor: "black",
-        scrollTrigger: {
-          trigger: lineRef.current,
-          start: "top 80%",
-        },
-      }
-    );
-  }, [scroll]);
+    });
+  }, [lineRef.current]);
 
-  return <div ref={lineRef} style={{ width: "100%", height: "2px" }} />;
+  return (
+    <div
+      ref={lineRef}
+      style={{
+        width: "0%",
+        height: "2px",
+        backgroundColor: "white",
+        marginTop: "10%",
+      }}
+    />
+  );
 };
 
 export default LineAnimation;

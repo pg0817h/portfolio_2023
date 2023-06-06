@@ -8,7 +8,7 @@ export default function ProjectPage() {
     gsap.to(".project__container", {
       ease: "expo.inOut",
       visibility: "visible",
-      delay: 6,
+      delay: 1,
       opacity: 1,
     });
   }, []);

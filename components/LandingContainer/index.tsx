@@ -4,17 +4,17 @@ import gsap from "gsap";
 const LandingContainer: React.FC = () => {
   useLayoutEffect(() => {
     gsap.to(".landing__container > .block", {
-      y: -100,
-      delay: 1.2,
-      ease: "power4.out",
-      stagger: 0.4,
+      // y: -100,
+      // delay: 1.2,
+      // ease: "power4.out",
+      // stagger: 0.4,
       visibility: "visible",
-      startAt: { y: 200 },
+      // startAt: { y: 200 },
     });
     gsap.to(".landing__container", {
       scale: 2,
       ease: "strong.inOut",
-      delay: 5.5,
+      delay: 1,
       visibility: "visible",
       duration: 2,
       y: -80,

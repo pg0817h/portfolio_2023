@@ -8,7 +8,7 @@ const Navbar: React.FC = () => {
       stagger: 0.08,
       ease: "expo.inOut",
       visibility: "visible",
-      delay: 6,
+      delay: 1,
       startAt: { y: -80 },
       duration: 1.6,
     });
@@ -16,7 +16,7 @@ const Navbar: React.FC = () => {
       y: 10,
       stagger: 0.1,
       ease: "expo.inOut",
-      delay: 6.5,
+      delay: 1,
       startAt: { y: -80 },
       duration: 1,
     });
