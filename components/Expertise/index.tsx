@@ -31,7 +31,7 @@ export default function Expertise() {
     });
   }, [expertiseRef.current]);
   return (
-    <div className="expertises" ref={expertiseRef}>
+    <div className="expertises my-10" ref={expertiseRef}>
       <LineAnimation target=".expertises" />
       <div className="expertisesText">Expertise</div>
       <div className="skill">React</div>

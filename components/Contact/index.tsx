@@ -9,7 +9,7 @@ export default function Contact() {
     gsap.to(".skill", {});
   }, [contactRef.current]);
   return (
-    <div className="contact">
+    <div className="contact my-20">
       <div className="container" ref={contactRef}>
         <h1 className="contactTitle">Get In Touch</h1>
         <p>

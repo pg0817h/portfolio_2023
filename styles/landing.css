@@ -1,5 +1,4 @@
 body {
-  
   overflow: hidden;
 }
 
@@ -18,7 +17,7 @@ body {
   color: #6d6458;
   visibility: hidden;
 }
-.about__des{
+.about__des {
   position: relative;
 }
 .site-menu {
@@ -28,7 +27,7 @@ body {
 .menu-item {
   margin-left: 60px;
 }
-.landingPage__container{
+.landingPage__container {
   height: 130vh;
 }
 .landing__container {
@@ -37,8 +36,8 @@ body {
   left: 50%;
   transform: translate(-50%, -50%);
   box-sizing: border-box;
-  width:200px;
-  height: 300px;
+  max-width: 25vw;
+  height: 30vw;
 }
 
 .block {
@@ -79,7 +78,8 @@ body {
 }
 
 .b-7 {
-  background: url("../images/image-seven.jpeg") 50% 50% no-repeat;
+  background: url("../images/profile.jpeg") 100% 100% no-repeat;
+  position: relative;
   background-size: cover;
 }
 .overlay {
@@ -93,15 +93,20 @@ body {
 .title {
   text-align: center;
   font-family: "Canopee";
-  font-size: 6em;
+  font-size: 10vw;
   color: #f4f3ea;
   overflow: hidden;
   visibility: hidden;
   position: absolute;
-  left:50%;
+  left: 50%;
   transform: translateX(-50%);
+  /* white-space: nowrap; */
+}
+#front{
   z-index: 1;
 }
+
+
 
 .title .letter {
   display: inline-block;

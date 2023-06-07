@@ -23,7 +23,7 @@ export default function App({ Component, pageProps }: AppProps) {
   }, []);
   return (
     <div className="page__container" ref={containerRef}>
-      <Navbar />
+      {/* <Navbar /> */}
       <Component {...pageProps} />
     </div>
   );

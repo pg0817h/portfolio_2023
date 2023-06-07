@@ -1,4 +1,4 @@
-import React, { useLayoutEffect, useRef, useEffect } from "react";
+import React, { useLayoutEffect, useRef, useEffect, useState } from "react";
 import { ScrollTrigger } from "gsap/dist/ScrollTrigger";
 import gsap from "gsap";
 import LandingContainer from "../LandingContainer";
@@ -23,10 +23,11 @@ export default function LandingPage() {
       startAt: { y: 0 },
       y: 100,
     });
+
     gsap.to(titleRef.current, {
       y: 300,
-      delay: 10,
-      duration: 10,
+      delay: 2,
+      duration: 7,
       scrollTrigger: {
         trigger: ".landingPage__container",
         start: "top top",
@@ -49,9 +50,9 @@ export default function LandingPage() {
       <div className="landingPage__container">
         <LandingContainer />
         <section>
-          <p className="title" ref={titleRef}>
-            `MachineGeon K'abby'🔫`
-          </p>
+          <span className="title" ref={titleRef}>
+            박건형 Geonhyeong
+          </span>
         </section>
         <section className="overlay"></section>
       </div>

@@ -1,7 +1,7 @@
 import React, { useEffect, useRef } from "react";
 import { gsap } from "gsap";
 
-export default function ProjectPage() {
+export default function ProjectPage2() {
   const scrollRef = useRef<HTMLDivElement>(null);
 
   useEffect(() => {
