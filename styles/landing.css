@@ -91,15 +91,17 @@ body {
 }
 
 .title {
+  top:100px;
   text-align: center;
   font-family: "Canopee";
-  font-size: 10vw;
+  font-size: 8vw;
   color: #f4f3ea;
   overflow: hidden;
   visibility: hidden;
   position: absolute;
   left: 50%;
   transform: translateX(-50%);
+ letter-spacing: 2rem;
   /* white-space: nowrap; */
 }
 #front{

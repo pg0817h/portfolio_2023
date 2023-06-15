@@ -3,6 +3,7 @@ import "../styles/landing.css";
 import "../styles/about.css";
 import "../styles/project.css";
 import "../styles/contact.css";
+import "../styles/sideNav.css";
 import "tailwindcss/tailwind.css";
 
 import Navbar from "@/components/Navbar";
@@ -24,6 +25,7 @@ export default function App({ Component, pageProps }: AppProps) {
   return (
     <div className="page__container" ref={containerRef}>
       {/* <Navbar /> */}
+
       <Component {...pageProps} />
     </div>
   );
