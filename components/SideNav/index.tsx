@@ -28,16 +28,6 @@ const SideNav: React.FC<SideNavProps> = ({
           <ul className="nav__list">
             <li
               className="nav__list-item"
-              onClick={() => {
-                aboutRef.current?.scrollIntoView({
-                  behavior: "smooth",
-                });
-              }}
-            >
-              about
-            </li>
-            <li
-              className="nav__list-item"
               onClick={() =>
                 contactRef.current?.scrollIntoView({
                   behavior: "smooth",
@@ -46,6 +36,17 @@ const SideNav: React.FC<SideNavProps> = ({
             >
               contact
             </li>
+            <li
+              className="nav__list-item"
+              onClick={() => {
+                aboutRef.current?.scrollIntoView({
+                  behavior: "smooth",
+                });
+              }}
+            >
+              about
+            </li>
+
             <li className="nav__list-item"></li>
           </ul>
           <div

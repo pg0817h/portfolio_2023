@@ -91,15 +91,15 @@ body {
 }
 
 .title {
-  top:100px;
+  top:30%;
   text-align: center;
   font-family: "Canopee";
-  font-size: 8vw;
+  font-size: 9vw;
   color: #f4f3ea;
   overflow: hidden;
   visibility: hidden;
   position: absolute;
-  left: 50%;
+  left: 48%;
   transform: translateX(-50%);
  letter-spacing: 2rem;
   /* white-space: nowrap; */

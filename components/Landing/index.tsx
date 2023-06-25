@@ -25,21 +25,22 @@ const LandingPage = forwardRef<HTMLDivElement, ChildComponentProps>(
         visibility: "visible",
         delay: 1,
         stagger: 0.5,
-        startAt: { y: -100 },
+        startAt: { y: -200 },
         y: 0,
       });
 
       gsap.to(titleRef.current, {
-        y: 300,
         delay: 2,
-        duration: 7,
+        y: innerHeight - 400,
+        duration: 5,
         scrollTrigger: {
           trigger: ".landingPage__container",
-          start: "top center",
-          scrub: true,
-          end: "bottom bottom",
+          start: "center center",
+          end: "bottom top",
+          scrub: 1.2,
         },
       });
+
       gsap.to(".landing__container", {
         ease: "expo.inOut",
         delay: 1,
@@ -52,9 +53,9 @@ const LandingPage = forwardRef<HTMLDivElement, ChildComponentProps>(
 
     return (
       <>
-        <div className="landingPage__container">
+        <div className="landingPage__container" ref={props.forwardedRef}>
           <LandingContainer />
-          <section ref={props.forwardedRef}>
+          <section>
             <span className="title" ref={titleRef}>
               박건형 Geonhyeong
             </span>

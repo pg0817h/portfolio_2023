@@ -9,24 +9,16 @@ export default function Expertise() {
     gsap.registerPlugin(ScrollTrigger);
     gsap.to(".skill", {
       ease: "expo.inOut",
+      backgroundPositionX: "0%",
       opacity: 1,
       stagger: 10,
       duration: 10,
       delay: 6,
       scrollTrigger: {
-        start: "top bottom",
+        start: "top center",
+        end: "bottom top",
         trigger: ".skill",
-        scrub: true,
-        onLeave: () => {
-          gsap.to(".skill", {
-            opacity: 0.3,
-          });
-        },
-        onLeaveBack: () => {
-          gsap.to(".skill", {
-            opacity: 1,
-          });
-        },
+        scrub: 1,
       },
     });
   }, [expertiseRef.current]);
