@@ -16,21 +16,21 @@ const LandingPage = forwardRef<HTMLDivElement, ChildComponentProps>(
       gsap.to(".overlay", {
         y: -500,
         ease: "power2.out",
-        delay: 1.2,
+        delay: 3,
       }); //TODO: scale
 
       gsap.to(titleRef.current, {
         duration: 1.5,
         ease: "expo.inOut",
         visibility: "visible",
-        delay: 1,
+        delay: 3,
         stagger: 0.5,
         startAt: { y: -200 },
         y: 0,
       });
 
       gsap.to(titleRef.current, {
-        delay: 2,
+        delay: 3,
         y: innerHeight - 400,
         duration: 5,
         scrollTrigger: {
@@ -43,11 +43,12 @@ const LandingPage = forwardRef<HTMLDivElement, ChildComponentProps>(
 
       gsap.to(".landing__container", {
         ease: "expo.inOut",
-        delay: 1,
+        delay: 3,
       });
 
       gsap.to(".landingPage__container", {
         opacity: 1,
+        delay: 3,
       });
     }, []);
 

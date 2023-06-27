@@ -61,23 +61,7 @@ body {
   background: url("../images/image-three.jpeg") 50% 50% no-repeat;
   background-size: cover;
 }
-
 .b-4 {
-  background: url("../images/image-four.jpeg") 50% 50% no-repeat;
-  background-size: cover;
-}
-
-.b-5 {
-  background: url("../images/image-five.jpeg") 50% 50% no-repeat;
-  background-size: cover;
-}
-
-.b-6 {
-  background: url("../images/image-six.jpeg") 50% 50% no-repeat;
-  background-size: cover;
-}
-
-.b-7 {
   background: url("../images/profile.jpeg") 100% 100% no-repeat;
   position: relative;
   background-size: cover;
