@@ -1,0 +1,30 @@
+.nav{
+    position: fixed;
+    top: 50%;
+    left: 1.66667vw;
+    display: flex;
+    z-index:1;
+    width: 0;
+    cursor: pointer;
+    visibility: hidden;
+    opacity: 0;
+}
+
+.nav__wrapper {
+    display: flex;
+    justify-content: center;
+    white-space: nowrap;
+    transform: rotate(-90deg);
+    transform-origin: left top 0;
+}
+
+.nav__list{
+    display: flex;
+}
+.nav__title{
+    text-decoration: none;
+    cursor: pointer;
+}
+.nav__list-item {
+    margin-right: 1.82292vw
+}

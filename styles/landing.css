@@ -1,0 +1,100 @@
+body {
+  overflow: hidden;
+}
+
+.navbar {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  height: 100px;
+  padding: 0 40px;
+  display: flex;
+  justify-content: space-between;
+  font-family: "Kobe", Helvetica, sans-serif;
+  font-weight: 400;
+  text-transform: uppercase;
+  line-height: 100px;
+  color: #6d6458;
+  visibility: hidden;
+}
+.about__des {
+  position: relative;
+}
+.site-menu {
+  display: flex;
+}
+
+.menu-item {
+  margin-left: 60px;
+}
+.landingPage__container {
+  height: 130vh;
+}
+.landing__container {
+  position: relative;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  box-sizing: border-box;
+  max-width: 25vw;
+  height: 30vw;
+}
+
+.block {
+  visibility: hidden;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+}
+
+.b-1 {
+  background: url("../images/image-one.jpeg") 50% 50% no-repeat;
+  background-size: cover;
+}
+
+.b-2 {
+  background: url("../images/image-two.jpeg") 50% 50% no-repeat;
+  background-size: cover;
+}
+
+.b-3 {
+  background: url("../images/image-three.jpeg") 50% 50% no-repeat;
+  background-size: cover;
+}
+.b-4 {
+  background: url("../images/profile.jpeg") 100% 100% no-repeat;
+  position: relative;
+  background-size: cover;
+}
+.overlay {
+  position: absolute;
+  width: 100%;
+  height: 200px;
+  bottom: 50%;
+  background: transparent;
+}
+
+.title {
+  top:30%;
+  text-align: center;
+  font-family: "Canopee";
+  font-size: 9vw;
+  color: #f4f3ea;
+  overflow: hidden;
+  visibility: hidden;
+  position: absolute;
+  left: 48%;
+  transform: translateX(-50%);
+ letter-spacing: 2rem;
+  /* white-space: nowrap; */
+}
+#front{
+  z-index: 1;
+}
+
+
+
+.title .letter {
+  display: inline-block;
+  line-height: 1em;
+}

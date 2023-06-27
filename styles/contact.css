@@ -1,0 +1,28 @@
+.contact .container {
+  width: 600px;
+  margin: 0px auto 100px;
+  text-align: center;
+  padding: 100px 0px;
+}
+.contactTitle{
+  font-size: 60px;
+  font-weight: 400;
+  line-height: 1.1;
+  color: black;
+  margin-bottom: 10%;
+}
+.email-link{
+  border: 1px solid black;
+  cursor: pointer;
+  border-radius: 4px;
+  padding: 1.25rem 1.75rem;
+  margin-top: 50px;
+  line-height: 1;
+  background-color: transparent;
+  display: inline-block;
+  /* transition: all 0.25s; */
+}
+.email-link:hover,
+.email-link:focus{
+background-color: bisque;
+}

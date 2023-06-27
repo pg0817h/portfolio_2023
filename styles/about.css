@@ -1,0 +1,87 @@
+.about__container {
+  box-sizing: border-box;
+  margin: 10%;
+  padding: 40px 0 40px 40px;
+  height: 1400px;
+  grid-template-columns: 0.5fr 1fr;
+  color: #fff;
+  visibility: hidden;
+  display: none;
+}
+.absolute{
+  position: absolute;
+}
+.-inset-y-4{
+  top: -1rem;
+  bottom: -1rem;
+}
+.-inset-x-4{
+  left: -1rem;
+  right: -1rem;
+}
+.-inset-y-2\.5{
+  top: -0.625rem;
+  bottom: -0.625rem;
+}
+.expertises{
+  color: #fff;
+  font-size: 3rem;
+  line-height: 2rem;
+  font-weight: 400;
+  padding: 200px 40px 40px 40px;
+  height: 2000px;
+  margin: 0 0 7.8rem 10%;
+}
+.expertisesText {
+  margin: 10% 0 10% 0;
+}
+.skill {
+  font-size: 10vw;
+  line-height: 15vw;
+}
+.about__intro{
+
+  position: sticky;
+}
+.pin-spacer{
+ 
+  width:100% !important;
+  height:100% !important;
+}
+.expertises .skill{
+  opacity: 0.3;
+}
+.about__container .intro {
+  
+ 
+  padding-top: 10%;
+  margin: 1rem 0;
+  color: #fff;
+  font-size: 2rem;
+  font-weight: 400;
+}
+.skills {
+  font-size: 1rem;
+  margin-left: 30%;
+
+ 
+}
+.skills__container{
+  margin-top: 8rem;
+}
+
+ul{
+  list-style: none;
+}
+.skills__title{
+  font-weight: 400;
+  margin-bottom: 7.8rem;
+  padding-top: 7rem;
+  position: relative;
+  
+}
+.about__section{
+  height: 2200px;
+  /* background-color: transparent; */
+}
+
