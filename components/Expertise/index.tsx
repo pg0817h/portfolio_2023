@@ -32,3 +32,4 @@ export default function Expertise() {
     </div>
   );
 }
+Expertise.displayName = "Expertise";

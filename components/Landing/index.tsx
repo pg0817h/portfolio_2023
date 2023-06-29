@@ -67,4 +67,5 @@ const LandingPage = forwardRef<HTMLDivElement, ChildComponentProps>(
     );
   }
 );
+LandingPage.displayName = "LandingPage";
 export default LandingPage;

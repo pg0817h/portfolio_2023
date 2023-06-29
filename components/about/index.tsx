@@ -1,3 +1,5 @@
+/* eslint-disable react/no-unescaped-entities */
+
 import React, {
   useRef,
   useLayoutEffect,
@@ -36,8 +38,8 @@ const AboutPage = forwardRef<HTMLDivElement, ChildComponentProps>(
         ease: "expo.inOut",
         scrollTrigger: {
           trigger: aboutRef.current,
-          start: `0px center`,
-          end: `4000px center`,
+          start: "0px center",
+          end: "4000px center",
           scrub: true,
           onEnter: () => {
             gsap.to("body", {
@@ -304,4 +306,5 @@ const AboutPage = forwardRef<HTMLDivElement, ChildComponentProps>(
     );
   }
 );
+AboutPage.displayName = "AboutPage";
 export default AboutPage;

@@ -31,4 +31,5 @@ const Contact = forwardRef<HTMLDivElement, ChildComponentProps>(
   }
 );
 
+Contact.displayName = "Contact";
 export default Contact;
